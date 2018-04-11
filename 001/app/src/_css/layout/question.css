@@ -1,0 +1,22 @@
+.l-question {
+  padding: 40px;
+}
+
+.l-question .l-question__ttl {
+  margin: 0 0 30px 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.l-question .l-question__list.is-end {
+  pointer-events: none;
+}
+
+.l-question .l-question__list li {
+  line-height: 2;
+  cursor: pointer;
+}
+
+.l-question .l-question__list li:hover {
+  color: red;
+}

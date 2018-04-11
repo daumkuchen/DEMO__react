@@ -1,0 +1,315 @@
+.c-btn__01 {
+  width: #{$gridwidth__PC * 6};
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    // max-width: #{$gridwidth__PC * 6};
+    width: 100%;
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 45px 20px;
+    font-family: #{$gfont__opensans};
+    font-size: 22px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid #{$gray__01};
+    position: relative;
+    @media screen and (max-width: 768px) {
+      padding: 40px #{$gridwidth__SP};
+      font-size: 16px;
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: auto;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+    }
+    @media screen and (min-width: 769px) {
+      &:before {
+        transition: width .2s #{$cubric__inoutcirc};
+      }
+      &:hover {
+        &:before {
+          width: 0;
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+.c-btn__02 {
+  width: #{$gridwidth__PC * 4};
+  text-align: center;
+  @media screen and (max-width: 768px) {
+    // max-width: #{$gridwidth__PC * 8};
+    width: 100%;
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 45px 20px;
+    font-family: #{$gfont__opensans};
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid #{$gray__01};
+    position: relative;
+    @media screen and (max-width: 768px) {
+      padding: 40px #{$gridwidth__SP};
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: auto;
+      width: 100%;
+      height: 3px;
+      background-color: #000;
+    }
+    @media screen and (min-width: 769px) {
+      &:before {
+        transition: width .2s #{$cubric__inoutcirc};
+      }
+      &:hover {
+        &:before {
+          width: 0;
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+  &.e-blank {
+    a {
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 13px;
+        height: 13px;
+        margin: 0 2px 0 20px;
+        background: top left no-repeat;
+        background-image: url(/img/common/icn_blank.svg);
+        background-size: 13px 13px;
+      }
+    }
+  }
+  &.e-bk {
+    a {
+      background-color: #000;
+      border: 0;
+      color: #fff;
+      &:before {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.c-btn__03 {
+  width: #{$gridwidth__PC};
+  text-align: center;
+  // @media screen and (max-width: 768px) {
+  //   width: 100%;
+  // }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 15px 0;
+    font-family: #{$gfont__opensans};
+    font-size: 14px;
+    background-color: rgba(255, 255, 255, .8);
+    border: 1px solid #{$gray__01};
+    position: relative;
+    @media screen and (max-width: 768px) {
+      padding: 40px #{$gridwidth__SP};
+    }
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: auto;
+      width: 100%;
+      height: 2px;
+      background-color: #000;
+    }
+    @media screen and (min-width: 769px) {
+      &:before {
+        transition: width .2s #{$cubric__inoutcirc};
+      }
+      &:hover {
+        &:before {
+          width: 0;
+          left: auto;
+          right: 0;
+        }
+      }
+    }
+  }
+  &.e-gray {
+    a {
+      background-color: #{$gray__03};
+      border: 0;
+      color: #fff;
+      &:before {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.c-btn__vec--01 {
+  width: #{$gridwidth__PC};
+  height: #{$gridwidth__PC};
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0;
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 34px;
+      width: 7px;
+      height: 25px;
+      background: top left no-repeat;
+      background-image: url(/img/common/icn_vec_01.svg);
+      background-size: 7px 25px;
+    }
+    @media screen and (min-width: 769px) {
+      &:before {
+        transition: opacity .2s #{$cubric__inoutcirc},
+                    transform .2s #{$cubric__inoutcirc};
+      }
+      &:hover {
+        &:before {
+          opacity: .5;
+          transform: translate(0, 5px);
+        }
+      }
+    }
+  }
+}
+
+.c-btn__vec--02 {
+  width: #{$gridwidth__PC};
+  height: #{$gridwidth__PC};
+  font-size: 0;
+  line-height: 0;
+  letter-spacing: 0;
+  @media screen and (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 25px;
+      left: 34px;
+      width: 7px;
+      height: 25px;
+      background: top left no-repeat;
+      background-image: url(/img/common/icn_vec_01.svg);
+      background-size: 7px 25px;
+      transform: rotate(180deg);
+      @media screen and (max-width: 768px) {
+        top: 19px;
+        left: 27px;
+      }
+    }
+    @media screen and (min-width: 769px) {
+      &:before {
+        transition: opacity .2s #{$cubric__inoutcirc},
+                    transform .2s #{$cubric__inoutcirc};
+      }
+      &:hover {
+        &:before {
+          opacity: .5;
+          transform: rotate(180deg) translate(0, 5px);
+        }
+      }
+    }
+  }
+}
+
+.c-ttl__01 {
+  margin: 0 0 20px 0;
+  text-align: left;
+  span {
+    display: block;
+    padding: 0 0 8px 56px;
+    font-size: 14px;
+    font-weight: 700;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 5px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #000;
+    }
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 7px;
+      left: 10px;
+      width: 40px;
+      height: 1px;
+      background-color: #000;
+    }
+  }
+  em {
+    display: block;
+    font-family: #{$gfont__opensans};
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -1px;
+  }
+  &.e-wh {
+    color: #fff;
+    span {
+      &:before {
+        background-color: #fff;
+      }
+      &:after {
+        background-color: #fff;
+      }
+    }
+  }
+}
+
+.c-ttl__02 {
+  font-family: #{$gfont__opensans};
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+*::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+*::selection {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  font-family: YakuHanJP, "游ゴシック", "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  line-height: 1;
+  letter-spacing: 0;
+  background: #fff;
+  -webkit-font-feature-settings: "palt";
+  font-feature-settings: "palt";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  min-height: 100vh;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #fff;
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #fff;
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #fff;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #fff;
+}
+
+input[type="submit"]::-webkit-search-decoration,
+input[type="button"]::-webkit-search-decoration {
+  display: none;
+}
